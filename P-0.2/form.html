@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display: block;
+            width: 200px;
+            float: left;
+            text-align: right;
+            margin: 10px 5px;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>forms</h1>
+    <form action="" method="post">
+        first name:
+        <input type="text" name="first name"/>
+        <br> <br>
+        last name :
+        <input type="text" name="last name"/>
+        <br> <br>
+        email:
+        <input type="text" name="email"  />
+
+        <br><br>
+        checkbox :
+        <input type="checkbox" name="check" value="ch1"/> check1
+         
+        <input type="checkbox" name="check" value="ch2"/> check2
+        <br> <br>
+        <input type="radio" name="radio" value="r1"/> radio1
+         
+        <input type="radio" name="radio" value="r2"/> radio2
+        
+       
+        <br> <br>
+        Message
+        <textarea name="message">your message here</textarea>
+        <br><br>
+        Drop down:
+        <select>
+            <option value="o1">option1</option>
+            <option value="o2">option2</option>
+            <option value="o3">option3</option>
+            <option value="o4">option4</option>
+        </select>
+
+       <br><br>
+       password:
+       <input type="password" name="password">
+       <br><br>
+       Number:
+       <input type="number" name="number">
+       <br><br>
+       Range
+      1 <input type="range" name="range" min="1" max ="10" value="1">10
+      <br><br>
+      Date:
+      <input type="date" name="date">
+      <br><br>
+      Time:
+      <input type="time" name ="time">
+      <br>
+      <br>
+      color:
+      <input type="color" name="color">
+      <br>
+       //group can form now
+       <fieldset>
+           title can also set and autofocus in firstname so that it starts first
+           <legend>personal info</legend>
+       <label for="firstname">first name:</label> 
+        <input type="text" name="first name" autofocus required id="firstname"/>
+        <br> <br>
+        last name :
+        <input type="text" name="last name"/>
+        <br> <br>
+        email:
+        <input type="email" name="email" placeholder="enter a valid email"  required />
+       </fieldset>
+        
+
+        <br><br>
+
+        <input type="submit" value="Send" />
+    </form>
+</body>
+</html>
