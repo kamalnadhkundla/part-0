@@ -1,0 +1,25 @@
+note over browser:
+user inputs the data in the text
+field(from-element) and then press
+the submit button(from-element)
+end note
+
+browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/new_notes
+server-->browser:HTTP status code 302
+
+note right of server:
+this is a url redirect, with which the servver asks the browser to
+do a new HTTP GET request to the address
+defined in the header's Location -the address notes.
+end note 
+
+note over browser:
+the browser reloads the notes page
+end note 
+
+browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser:main.css
+browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser:main.js
+browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser:[{"content":"y19-full","date":"2021-05-25T07:42:20.903Z"}]
